@@ -1,1 +1,93 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="areastyle.css">
+    <title>Szorzás</title>
+</head>
+
+<body>
+
+    <div class="box2">
+        <button class="btn" onclick="timeClick()" type="button">Pontos idő</button>
+        Pontos idő: <strong><span id="time"></span></strong>
+    </div>
+
+    <div class="box1">
+        <button class="btn" onclick="dateClick()" type="button">Dátum</button>
+        Dátum: <strong></strongy><span id="date"></span></strong>
+    </div>
+
+    <div class="box3">
+        <button class="btn btnbg" onclick="josClick()" type="button">Jóslás</button>
+    </div>
+    
+    <div class="header">
+        <div class="container">
+
+            <h1>Terület kerület<br>számítás</h1>
+            <h3>1 méter = 25px</h3>
+            <form>
+                <label class="cont" for="number1">A oldal / méter</label>
+                <input type="number" name="number1" class="aumount">
+                <label class="cont" for="number2">B oldal / méter</label>
+                <input type="number" name="number2" class="price">
+
+            </form>
+
+            <button onclick="calcNum()" type="button" class="btn">Számol</button>
+
+            <div class="show-span">
+                Terület: <span id="show-am" class="show"> 0 </span> m2
+            </div>
+
+            <div class="show-span2">
+                Kerület: <span id="show-am2" class="show"> 0 </span> m
+            </div>
+        </div>
+
+        <div class="box">
+
+            <div class="cube">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+
+            <h1>Kör terület kerület<br>számítás</h1>
+            <h3>1 méter = 25px</h3>
+            <form>
+                <label class="cont" for="number4">A kör sugara</label>
+                <input type="number" name="number4" class="aumount" id="circle">
+
+            </form>
+
+            <button onclick="calcNumCircle()" type="button" class="btn">Számol</button>
+
+            <div class="show-span">
+                Terület: <span id="show-am3" class="show"> 0 </span> m2
+            </div>
+
+            <div class="show-span">
+                Kerület: <span id="show-am4" class="show"> 0 </span> m
+            </div>
+        </div>
+        <div class="circle-box">
+            <div class="circle-box1">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="area.js"></script>
+    <script src="mainarea.js"></script>
+</body>
+
+</html>
